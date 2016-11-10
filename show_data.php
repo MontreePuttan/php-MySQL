@@ -11,7 +11,8 @@
         <th>ID</th>
         <th>Name</th>
         <th>Lastname</th>
-        <th>Edit</th>
+        <th>Update</th>
+        <th>Delete</th>
 
     </tr>
     </thead>
@@ -27,6 +28,7 @@
             <td><?php echo $result_member['name']; ?></td>
             <td><?php echo $result_member['lastname']; ?></td>
             <td><a href="update_data.php?id=<?php echo $result_member['id']; ?>" target="_blank">edit</a> </td>
+            <td><a href="delete_data.php?id=<?php echo $result_member['id']; ?>" target="_blank">delete</a> </td>
         </tr>
     <?php } ?>
     </tbody>

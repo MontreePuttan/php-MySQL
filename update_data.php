@@ -2,7 +2,6 @@
 <div align="center">
     <?php
     include "db_connect.php";
-    //$request_id_user = $_GET['id'];
     if(isset( $_GET['id'])){
         $request_id_user = $_GET['id'];
     $sql_member = "select * from member where id = '$request_id_user'";
@@ -26,7 +25,6 @@ if(isset($_GET['btn_update'])){
     $lastname = $_GET['lastname'];
 
     $sql_update = "UPDATE member SET name='$name',lastname='$lastname' WHERE id='$id_user'";
-    //die();
     $result_sql_update = mysql_query($sql_update) or die(mysql_error());
     if($result_sql_update){
 
