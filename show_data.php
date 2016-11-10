@@ -26,7 +26,7 @@
             <td><?php echo $result_member['id']; ?></td>
             <td><?php echo $result_member['name']; ?></td>
             <td><?php echo $result_member['lastname']; ?></td>
-            <td><a href="update_date.php?id=<?php echo $result_member['id']; ?>">edit</a> </td>
+            <td><a href="update_data.php?id=<?php echo $result_member['id']; ?>" target="_blank">edit</a> </td>
         </tr>
     <?php } ?>
     </tbody>
